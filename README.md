@@ -38,7 +38,7 @@ Within this `open-sea` repository, you will find Docker Compose files, potential
     * **Environment Variables:** Many configurations rely on environment variables, often defined in a separate `.env` file (you might find a `.env.example` which you should rename and modify). **It's crucial to create a `.env` file (if provided as an example) and adjust the values to match your specific environment.** This includes paths to your data storage, API keys, usernames, passwords, etc.
     * **Volume Paths:** Update the paths specified in the `volumes` section to reflect the correct locations on your host machine where you want the application data to be stored.
     * **Port Mappings:** Modify the port mappings (e.g., `80:80`) if the default ports conflict with other services already running on your network.
-    * **Network Configuration:** Adjust network settings if you have a custom network setup.
+    * **Network Configuration:** Adjust network settings if you have a custom network setup. **Please note that most of my setup utilizes Traefik as a reverse proxy for managing external access and SSL certificates. In many of the `docker-compose.yml` files, you will find services configured to work with Traefik (e.g., labels defining routing rules). If you are not using Traefik, you can comment out the `labels` section under the respective service and instead expose the container ports directly using the `ports` directive (e.g., `ports: - "8080:80"`). This will allow you to access the service directly on the specified port of your Docker host.**
 4.  **Deploy the services:** Once you have customized the files, navigate to the directory containing the `docker-compose.yml` file in your terminal and execute the following command:
 
     ```bash
