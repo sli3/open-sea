@@ -1,6 +1,15 @@
-# open-sea: My Homelab Docker Compose Files
+<div id="top"></div>
+<div align="center">
+    <img src="Resources/images/Gemini_Generated_Image_cover.png" alt="My Image" width="450" style="max-width: 100%;">
 
-Welcome to the `open-sea` repository! Here you'll find the Docker Compose files I use to manage the various services and applications running in my personal homelab setup.
+  <h3 align="center">open-sea: My Homelab Docker Compose Files</h3>
+
+  <p align="center">
+   
+   Welcome to the `open-sea` repository! Here you'll find the Docker Compose files I use to manage the various services and applications running in my personal homelab setup.
+  </p>
+</div>
+
 
 ## Purpose
 
